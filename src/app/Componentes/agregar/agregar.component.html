@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <div class="card m-5">
+        <div class="card-header">
+            <h3>Agregar libro</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">  
+                <div class="mb-3 col">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control" [(ngModel)]="libro.nombre">
+                </div>
+                <div class="mb-3 col">
+                    <label class="form-label">Autor</label>
+                    <input type="text" class="form-control" [(ngModel)]="libro.autor">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="mb-3 col">
+                    <label class="form-label">Editorial</label>
+                    <input type="text" class="form-control" [(ngModel)]="libro.editorial">
+                </div>
+                <div class="mb-3 col">
+                    <label class="form-label">Ejemplares disponibles</label>
+                    <input type="number" class="form-control" [(ngModel)]="libro.ejemplaresDisponibles">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn btn-success" (click)="agregarLibro()">Guardar</button>
+                </div>                   
+            </div>
+        </div>
+      </div>        
+</div>
